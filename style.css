@@ -1,0 +1,78 @@
+/* Ubuntu Font  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@200;400;500&family=Roboto&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: rgb(255, 155, 74);
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: rgba(255, 155, 74, 0.678);
+}
+
+.logo {
+    transition: 0.3s ease-in-out;
+    width: 80px;
+}
+
+.nav-item.px-4 {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    /* background: #3a3a3a; */
+    position: fixed;
+    transition: 0.4s ease-in-out;
+}
+
+.hide {
+    display: none !important;
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.button-grad {
+    background: linear-gradient(90deg, rgb(239 108 21 / 59%) 0%, rgb(244 125 46 / 76%) 100%) !important;
+    border: 1px solid #ff9f9f2b !important;
+    box-shadow: -2px -1px 16px 0px rgb(255 102 0 / 61%) !important;
+}
+
+.nav-btn {
+    height: 40px;
+    width: 40px;
+}
+
+.button-grad:hover {
+    box-shadow: -2px -1px 16px 3px rgb(228, 144, 17, 0.493) !important;
+}
+
+.sidebar {
+    transition: 0.3s ease-in-out;
+    width: 30%;
+    position: fixed;
+    left: -30%;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.scrolled {
+    background: rgba(26, 26, 26, 0.575);
+}
+
+.scrolled .logo {
+    width: 70px;
+}

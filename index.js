@@ -4,6 +4,7 @@ let navClose = document.querySelector('.navs-close');
 let allNavs = document.querySelectorAll('.navs')
 let sidebar = document.querySelector('.sidebar');
 let header = document.querySelector('.header');
+let scrollTop = document.querySelector('.scrollTop');
 
 
 // Click for menu toggle 
@@ -30,5 +31,18 @@ document.addEventListener('scroll', function () {
 
     }
 })
+
+// Button to scroll to top 
+document.addEventListener('scroll', function () {
+    if (scrollY > 200) {
+        scrollTop.classList.add('scrolled');
+    }
+    else {
+        scrollTop.classList.remove('scrolled');
+    }
+})
+
+
+
 
 

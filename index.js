@@ -41,8 +41,3 @@ document.addEventListener('scroll', function () {
         scrollTop.classList.remove('scrolled');
     }
 })
-
-
-
-
-
